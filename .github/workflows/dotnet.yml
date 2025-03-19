@@ -22,10 +22,10 @@ jobs:
       with:
         dotnet-version: '9.0.102'
     - name: Install dependencies
-      run: dotnet restore ClassLibraryProjects/ClassLibraryProjects.sln
+      run: dotnet restore ./ClassLibraryProjects.sln
     - name: Build
-      run: dotnet build ClassLibraryProjects/ClassLibraryProjects.sln
+      run: dotnet build ./ClassLibraryProjects.sln
     - name: Test with the dotnet CLI
-      run: dotnet test ClassLibraryProjects/ClassLibraryProjects.sln
+      run: dotnet test ./ClassLibraryProjects.sln
 
 #test
